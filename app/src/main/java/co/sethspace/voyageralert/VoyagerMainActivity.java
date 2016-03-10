@@ -1,5 +1,7 @@
 package co.sethspace.voyageralert;
 
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,6 +13,14 @@ public class VoyagerMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_voyager_main);
+
+        /**
+         * Instantiate a the Main Voyager Fragment
+         */
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        VoyagerMainActivityFragment voyagerMainActivityFragment = new VoyagerMainActivityFragment();
+        fragmentTransaction.add(R.id.voyager_main_activity,voyagerMainActivityFragment);
     }
 
 
