@@ -1,7 +1,7 @@
 package co.sethspace.voyageralert;
 
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
@@ -22,7 +22,7 @@ public class VoyagerMainActivityFragment extends Fragment {
         View v =  inflater.inflate(R.layout.fragment_voyager_main, container, false);
 
         //Set the toolbar
-        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.voyager_toolbar);
+        Toolbar toolbar = (Toolbar)v.findViewById(R.id.voyager_toolbar);
         toolbar.setTitle(R.string.app_name);
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
 
