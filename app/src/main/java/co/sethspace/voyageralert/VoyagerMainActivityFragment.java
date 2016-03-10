@@ -23,6 +23,7 @@ public class VoyagerMainActivityFragment extends Fragment {
 
         //Set the toolbar
         Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.voyager_toolbar);
+        toolbar.setTitle(R.string.app_name);
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
 
         return v;
