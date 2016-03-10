@@ -21,6 +21,7 @@ public class VoyagerMainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         VoyagerMainActivityFragment voyagerMainActivityFragment = new VoyagerMainActivityFragment();
         fragmentTransaction.add(R.id.voyager_main_activity,voyagerMainActivityFragment);
+        fragmentTransaction.commit();
     }
 
 
