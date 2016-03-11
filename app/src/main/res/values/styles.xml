@@ -1,6 +1,6 @@
 <resources>
 
-    <style name="AppTheme" parent="Base.Theme.Voyager">
+    <style name="Theme.Voyager" parent="Base.Theme.Voyager">
     </style>
 
     <style name="Base.Theme.Voyager" parent="Theme.AppCompat.Light.NoActionBar">
