@@ -1,5 +1,6 @@
 package co.sethspace.voyageralert;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,13 @@ public class VoyagerMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_voyager_main);
 
+        /**
+         * Start the Registration Intent Service
+         */
+
+        // Start IntentService to register this application with GCM.
+        Intent intent = new Intent(this, VoyagerRegistrationIntentService.class);
+        startService(intent);
         /**
          * Instantiate a the Main Voyager Fragment
          */
