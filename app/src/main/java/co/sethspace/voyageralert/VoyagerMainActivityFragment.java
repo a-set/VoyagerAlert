@@ -151,7 +151,8 @@ public class VoyagerMainActivityFragment extends Fragment implements OnMapReadyC
                 .scheme("http")
                 .host("uci.alware.org")
                 .addPathSegment("history.php")
-                .addQueryParameter("time", Long.toString(System.currentTimeMillis()/1000L))
+                .addQueryParameter("id","fAactxgd5Xo:APA91bHjyJImJ5hscECMsyhHURLS0uJE0SrsCUypHY_rniMoesJvwNBkg9tAu7YSjEOf-X_CCCmp2OCsOMI16OuFO8YZFgAu1FtgWIjlkQbzIy7gOTjf3-VZlkderqysHDSMvjaczQSm")
+                .addQueryParameter("time", Long.toString(1457891414l))
                 .addQueryParameter("long", Double.toString(longitude))
                 .addQueryParameter("lat", Double.toString(latitude))
                 .addQueryParameter("level",Integer.toString(1000)).build();
