@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
         <fragment
             android:id="@+id/voyager_map"
             android:name="com.google.android.gms.maps.SupportMapFragment"

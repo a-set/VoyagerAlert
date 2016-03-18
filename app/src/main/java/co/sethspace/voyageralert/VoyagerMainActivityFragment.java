@@ -155,7 +155,7 @@ public class VoyagerMainActivityFragment extends Fragment implements OnMapReadyC
                 .addQueryParameter("time", Long.toString(1457891414l))
                 .addQueryParameter("long", Double.toString(longitude))
                 .addQueryParameter("lat", Double.toString(latitude))
-                .addQueryParameter("level",Integer.toString(1000)).build();
+                .addQueryParameter("level",Integer.toString(100)).build();
 
         Request request = new Request.Builder()
                 .url(url)
