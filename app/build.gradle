@@ -27,5 +27,12 @@ dependencies {
     compile 'com.google.android.gms:play-services-maps:8.4.0'
     compile 'com.google.android.gms:play-services-location:8.4.0'
     compile "com.google.android.gms:play-services-gcm:8.4.0"
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    // Circular Image View (displays images circularly)
+    compile 'com.pkmmte.view:circularimageview:1.1'
+    // Picasso (dynamic image loading/caching)
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
 }
 apply plugin: 'com.google.gms.google-services'
